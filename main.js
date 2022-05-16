@@ -1,0 +1,38 @@
+function preload(){  
+}
+
+function setup() {
+    canvas = createCanvas(500,400);
+    canvas.position(110,250);
+    video = createCapture(VIDEO);
+    video.hide();
+
+    tint_color = "";
+}
+
+function draw() {
+    image(video,100,80,300,250);
+    
+    stroke(168,10,10);
+    fill(168,10,10);
+
+    circle(40,40,50);
+    circle(460,40,50);
+    circle(40,360,50);
+    circle(460,360,50);
+
+    stroke(50,160,80);
+    fill(50,168,80);
+
+    rect(63,27,375,25);
+    rect(63,347,375,25);
+    rect(27,63,25,275);
+    rect(448,63,25,275);
+
+    circle();
+
+}
+
+function take_snapshot() {
+    save('student_name.png');
+}
